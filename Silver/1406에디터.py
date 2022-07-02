@@ -32,7 +32,7 @@ print(''.join(st1))
 
 
 
-# 내 풀이 시간 초과가 떴다.
+# 내 풀이는 시간 초과가 떴다.
 import sys
 
 input = sys.stdin.readline
