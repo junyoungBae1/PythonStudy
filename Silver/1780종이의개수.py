@@ -5,7 +5,7 @@ import sys
 input = sys.stdin.readline
 n = int(input())
 paper = list()
-_one = 0
+minus = 0
 zero = 0
 one = 0
 for _ in range(n):
@@ -13,7 +13,7 @@ for _ in range(n):
 
 
 def check(row, col, n):
-    global _one, zero, one
+    global minus, zero, one
     curr = paper[row][col]
     for i in range(row, row + n):
         for j in range(col, col + n):
@@ -31,7 +31,7 @@ def check(row, col, n):
                 check(row + next__n, col + next__n, next_n)
                 return
     if curr == -1:
-        _one += 1
+        minus += 1
     elif curr == 0:
         zero += 1
     else:
@@ -40,6 +40,6 @@ def check(row, col, n):
 
 
 check(0, 0, n)
-print(_one)
+print(minus)
 print(zero)
 print(one)
