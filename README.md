@@ -15,3 +15,6 @@ backjoon
 
      DC,recirsion // DFS, BFS // BFS // Brute Force, bit masking // 자료구조(heap)
 
+7.5 바이러스(2606):
+
+     DFS,BFS
