@@ -15,6 +15,6 @@ backjoon
 
      DC,recirsion // DFS, BFS // BFS // Brute Force, bit masking // 자료구조(heap)
 
-7.5 바이러스(2606), 토마토(7576), 계단오르기(2579) :
+7.5 바이러스(2606), 토마토(7576), 적록색약(10026), 계단오르기(2579) :
 
-     DFS,BFS // BFS // DA
+     DFS,BFS // BFS // DFS // DA
