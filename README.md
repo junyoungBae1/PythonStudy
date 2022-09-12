@@ -26,5 +26,9 @@ backjoon
 7.11 연결요소의개수(11724), ATM(11399), 숨바꼭질(1697), 최소비용구하기(1916) : 
 
     DFS,BFS // GA(Greedy Algorithm) // BFS // DA(Dijkstra Algorithm)
+
+9.12 벌집(2292),동전0(11048) : 
+
+    math // GA
     
     
