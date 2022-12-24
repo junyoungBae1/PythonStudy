@@ -12,3 +12,4 @@ for i in range(n):
 xy_list.sort(key=lambda x: (x[0],x[1]))
 for i in xy_list:
     print(i[0],i[1])
+
