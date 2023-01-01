@@ -1,5 +1,5 @@
 # 1764 듣보잡 https://www.acmicpc.net/problem/1764
-# 교집합 &, 합집합 |, .union, 차집합 -,.difference
+# 교집합 &,.intersection, 합집합 |, .union, 차집합 -,.difference
 import sys
 
 input = sys.stdin.readline
