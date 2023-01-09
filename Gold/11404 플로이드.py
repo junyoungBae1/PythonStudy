@@ -3,7 +3,7 @@
 import sys
 
 input = sys.stdin.readline
-INF = 1e5 + 1
+INF = int(1e9)
 # 도시 개수
 n = int(input())
 # 버스 개수
