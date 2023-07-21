@@ -1,6 +1,7 @@
 # 구간 합 구하기 5 https://www.acmicpc.net/problem/11660
 
 import sys
+input = sys.stdin.readline
 #표의 크기 n
 #합을 구해야 하는 횟수 m
 n,m = map(int,input().split())
