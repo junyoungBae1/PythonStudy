@@ -5,11 +5,7 @@ import sys
 input = sys.stdin.readline
 
 n = int(input())
-temp = input().split()
-seq = []
-for i in temp:
-    seq.append(int(i))
-
+seq = list(map(int,input().split()))
 d = [0] * n
 d[0] = seq[0]
 for i in range(1, n):
