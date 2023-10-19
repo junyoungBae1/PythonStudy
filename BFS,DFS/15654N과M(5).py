@@ -16,6 +16,7 @@
 #     for j in i:
 #         print(j, end=' ')
 #     print("")
+
 import sys
 
 input = sys.stdin.readline
@@ -25,8 +26,6 @@ arr = list(map(int, input().split()))
 
 arr = sorted(arr)
 visited = [0] * N
-out = []
-
 def dfs():
     if len(out) == M:
         print(' '.join(map(str, out)))
