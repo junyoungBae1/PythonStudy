@@ -17,6 +17,20 @@ for i in range(1,n+1):
         # 얻을 수 있는 최댓값
         dp[fin_date] = max(dp[fin_date], dp[i-1] + p[i])
 print(max(dp))
+
+
+
+from sys import stdin
+
+N = int(stdin.readline())
+dp = [0]*(N+1)
+for i in range(1, N+1):
+    t, p = map(int, stdin.readline().split())
+    dp[i] = max(dp[i-1], dp[i])
+    if i+t<=N+1:
+        dp[i+t-1] = max(dp[i-1]+p, dp[i+t-1])
+
+print(dp[-1])
 # if 조건이 필요,
 # if s[1][1] <= n:
 #     dp[1] = s[1][1]
