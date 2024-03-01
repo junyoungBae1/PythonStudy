@@ -33,15 +33,29 @@
 #             elif abs(a) <= b:
 #                 heapq.heappush(positive, b)
 #                 print(a)
-import heapq
-import sys
+# import heapq
+# import sys
+#
+# N = int(sys.stdin.readline())
+# heap = []
+#
+# for _ in range(N):
+#     x = int(sys.stdin.readline())
+#     if x != 0:
+#         heapq.heappush(heap, (abs(x), x))
+#     else:
+#         print(heapq.heappop(heap)[1] if heap else 0)
 
-N = int(sys.stdin.readline())
+n = int(input())
 heap = []
 
-for _ in range(N):
-    x = int(sys.stdin.readline())
+for _ in range(n):
+    x = int(input())
     if x != 0:
-        heapq.heappush(heap, (abs(x), x))
+        heap.append(x)
     else:
-        print(heapq.heappop(heap)[1] if heap else 0)
+        if not heap:
+            print(0)
+        else:
+            heap.sort(key=lambda y: (abs(y), y))
+            print(heap.pop(0))
